@@ -49,11 +49,11 @@ export const Banner = () => {
   return (
     <section className="banner" id="home">
       <Container>
-        <Row className="align-items-center">
+        <Row className="aligh-items-center">
           <Col xs={12} md={6} xl={7}>
             <span className="tagline">Bem vindo ao meu Portfólio</span>
             <h1>
-              {"Oi, eu sou um Software Engineer  "}
+              {"Olá mundo! Me chamo Victor  "}
               <span className="wrap">{text}</span>
             </h1>
             <p>
