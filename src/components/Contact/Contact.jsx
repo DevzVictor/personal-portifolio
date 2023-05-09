@@ -13,7 +13,7 @@ export const Contact = () => {
   };
 
   const [formDetails, setFormDetails] = useState(formInitialDetails);
-  const [buttonText, setButtonText] = useState("send");
+  const [buttonText, setButtonText] = useState("Enviar");
   const [status, setStatus] = useState({});
 
   const onFormUpdate = (category, value) => {
@@ -26,10 +26,10 @@ export const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setButtonText("Enviando...");
-    let response = await fetch("http://localhost:5000/contact", {
+    let response = await fetch("http://localhost:3000/contact", {
       method: "POST",
       headers: {
-        "content-type": "application/json:charset=utf-8",
+        "content-type": "application/json;charset=utf-8",
       },
       body: JSON.stringify(formDetails),
     });

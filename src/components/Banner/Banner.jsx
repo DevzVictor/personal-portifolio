@@ -5,6 +5,8 @@ import headerImg from "../../assets/img/header-img.svg";
 import "./Style.css";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
+import { HashLink } from "react-router-hash-link";
+import { BrowserRouter as Router } from "react-router-dom";
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -53,37 +55,41 @@ export const Banner = () => {
   };
 
   return (
-    <section className="banner" id="home">
-      <Container>
-        <Row>
-          <Col xs={12} md={6} xl={7}>
-            <TrackVisibility>
-            {({isVisible}) => 
-              <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">Bem vindo ao meu Portfólio</span>
-                <h1>{`Hello World !`}</h1>
-                <h1>{`Eu sou Victor `}</h1>
-                <span className="wrap">{text}</span>
-                <p>
-                Curioso por natureza, sempre me interessei em entender os porquês das coisas e buscar maneiras de torná-las melhores. Desde sempre, minha missão tem sido utilizar a tecnologia para fazer do mundo um lugar melhor. Acredito no poder transformador da tecnologia e em seu potencial para gerar impacto positivo. Busco constantemente maneiras de aplicar meus conhecimentos e habilidades em prol dessa missão, buscando soluções inovadoras e sustentáveis. Com a convicção de que a tecnologia pode impulsionar mudanças significativas, estou determinado a contribuir para um futuro mais promissor e inclusivo através do meu trabalho.
-                </p>
-                <button onClick={() => console.log("Connect")}>
-                  Vamos nos conectar!
-                  <ArrowRightCircle size={25} />
-                </button>
-              </div>}
-            </TrackVisibility>
-          </Col>
-          <Col xs={12} md={6} xl={5}>
-            <TrackVisibility>
-                {({ isVisible }) =>
-                  <div className={isVisible ? "animate__animated animate__zoomIn  animate__delay-2s" : ""}>
-                    <img src={headerImg} alt="Header Img" />
-                  </div>}
+    <Router>
+      <section className="banner" id="home">
+        <Container>
+          <Row>
+            <Col xs={12} md={6} xl={7}>
+              <TrackVisibility>
+              {({isVisible}) => 
+                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                  <span className="tagline">Bem vindo ao meu Portfólio</span>
+                  <h1>{`Hello World !`}</h1>
+                  <h1>{`Eu sou Victor `}</h1>
+                  <span className="wrap">{text}</span>
+                  <p>
+                  Curioso por natureza, sempre me interessei em entender os porquês das coisas e buscar maneiras de torná-las melhores. Desde sempre, minha missão tem sido utilizar a tecnologia para fazer do mundo um lugar melhor. Acredito no poder transformador da tecnologia e em seu potencial para gerar impacto positivo. Busco constantemente maneiras de aplicar meus conhecimentos e habilidades em prol dessa missão, buscando soluções inovadoras e sustentáveis. Com a convicção de que a tecnologia pode impulsionar mudanças significativas, estou determinado a contribuir para um futuro mais promissor e inclusivo através do meu trabalho.
+                  </p>
+                  <HashLink to="#connect">
+                    <button onClick={() => console.log("Connect")}>
+                      Vamos nos conectar!
+                      <ArrowRightCircle size={25} />
+                    </button>
+                  </HashLink>
+                </div>}
               </TrackVisibility>
-          </Col>
-        </Row>
-      </Container>
-    </section>
+            </Col>
+            <Col xs={12} md={6} xl={5}>
+              <TrackVisibility>
+                  {({ isVisible }) =>
+                    <div className={isVisible ? "animate__animated animate__zoomIn  animate__delay-2s" : ""}>
+                      <img src={headerImg} alt="Header Img" />
+                    </div>}
+                </TrackVisibility>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+    </Router>
   );
 };

@@ -2,6 +2,10 @@
   padding: 80px 0;
   position: relative;
   background-color: black;
+  background-image: url('../../assets/img/color-sharp2.png');
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .project h2 {
   font-size: 45px;
@@ -14,7 +18,7 @@
   letter-spacing: 0.8px;
   line-height: 1.5em;
   margin: 14px auto 30px auto;
-  text-align: center;
+  text-align: justify;
   width: 56%;
 }
 .project .nav.nav-pills {
@@ -116,11 +120,4 @@
   font-size: 15px;
   letter-spacing: 0.8px;
 }
-.background-image-right {
-  top: 20%;
-  position: absolute;
-  bottom: 0;
-  width: 35%;
-  right: 0;
-  z-index: -4;
-}
+

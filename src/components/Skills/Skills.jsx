@@ -9,7 +9,6 @@ import html from "../../assets/img/html-icon.svg";
 import css from "../../assets/img/css-icon.svg";
 import java from "../../assets/img/java-icon.svg";
 import spring from "../../assets/img/spring-icon.svg";
-import colorSharp from "../../assets/img/color-sharp.png";
 import "./Style.css";
 
 export const Skills = () => {
@@ -79,7 +78,6 @@ export const Skills = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-left" src={colorSharp}/>
     </section>
   );
 };
