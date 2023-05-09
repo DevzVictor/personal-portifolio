@@ -65,23 +65,23 @@ export const NavBar = () => {
               }
               onClick={() => onUpdateActiveLink("projects")}
             >
-              Projects
+              Projetos
             </Nav.Link>
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="#">
-                <img src={navIcon1} alt="" />
+              <a href="https://www.linkedin.com/in/victor-rodrigues-dev/" target="_blank">
+                <img src={navIcon1} alt="Linkedin" />
               </a>
-              <a href="#">
-                <img src={navIcon2} alt="" />
+              <a href="https://github.com/DevzVictor" target="_blank">
+                <img src={navIcon2} alt="GitHub" />
               </a>
-              <a href="#">
-                <img src={navIcon3} alt="" />
+              <a href="https://twitter.com/Vict0r_dev" target="_blank">
+                <img src={navIcon3} alt="Twitter" />
               </a>
             </div>
             <button className="vvd" onClick={() => console.log("connect")}>
-              <span>Let's connect'</span>
+              <span>Vamos nos conectar</span>
             </button>
           </span>
         </Navbar.Collapse>

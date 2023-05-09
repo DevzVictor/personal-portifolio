@@ -1,9 +1,14 @@
 import { Container, Col, Row } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import meter1 from "../../assets/img/meter1.svg";
-import meter2 from "../../assets/img/meter2.svg";
-import meter3 from "../../assets/img/meter3.svg";
+import javascript from "../../assets/img/javascript-icon.svg";
+import typescript from "../../assets/img/typescript-icon.svg";
+import react from "../../assets/img/react-icon.svg";
+import nestjs from "../../assets/img/nestjs-icon.svg";
+import html from "../../assets/img/html-icon.svg";
+import css from "../../assets/img/css-icon.svg";
+import java from "../../assets/img/java-icon.svg";
+import spring from "../../assets/img/spring-icon.svg";
 import colorSharp from "../../assets/img/color-sharp.png";
 import "./Style.css";
 
@@ -35,23 +40,39 @@ export const Skills = () => {
           <Col>
           <div className="skill-bx">
             <h2>Skills</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis culpa sequi rerum doloribus quod quibusdam nihil in ea. Quod eius laborum fugiat rem amet quibusdam laboriosam ratione ea id consectetur?</p>
+            <p>Hoje, meu foco principal está na construção do backend com Java e SpringBoot, combinado com o desenvolvimento do frontend utilizando React. Essas são habilidades que estou continuamente aprimorando, buscando constantemente melhorar meus resultados e entregar soluções eficientes e inovadoras.</p>
             <Carousel responsive={responsive} infinite={true} className="skill-slider">
                 <div className="item">
-                    <img src={meter1} alt="" />
-                    <h5>Web Developer</h5>
+                    <img src={javascript} alt="" />
+                    <h5>Java Script</h5>
                 </div>
                 <div className="item">
-                    <img src={meter2} alt="" />
-                    <h5>Brand Identify</h5>
+                    <img src={typescript} alt="" />
+                    <h5>Type Script</h5>
                 </div>
                 <div className="item">
-                    <img src={meter3} alt="" />
-                    <h5>Full Stack</h5>
+                    <img src={react} alt="" />
+                    <h5>React</h5>
                 </div>
                 <div className="item">
-                    <img src={meter1} alt="" />
-                    <h5>Web Developer</h5>
+                    <img src={nestjs} alt="" />
+                    <h5>NestJS</h5>
+                </div>
+                <div className="item">
+                    <img src={html} alt="" />
+                    <h5>HTML</h5>
+                </div>
+                <div className="item">
+                    <img src={css} alt="" />
+                    <h5>CSS</h5>
+                </div>
+                <div className="item">
+                    <img src={java} alt="" />
+                    <h5>Java</h5>
+                </div>
+                <div className="item">
+                    <img src={spring} alt="" />
+                    <h5>SpringBoot</h5>
                 </div>
             </Carousel>
           </div>

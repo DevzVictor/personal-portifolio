@@ -11,19 +11,19 @@ export const Footer = () => {
     <footer className="footer">
       <Container>
         <Row className="align-item-center">
-          <MailchimpForm />
+          {/* <MailchimpForm /> */}
           <Col sm={6}>
             <img src={logo} alt="Logo" />
           </Col>
           <Col sm={6} className="text-center text-sm-end">
             <div className="social-icon">
-              <a href="">
+              <a href="https://www.linkedin.com/in/victor-rodrigues-dev/" target="_blank">
                 <img src={navIcon1} />
               </a>
-              <a href="">
+              <a href="https://github.com/DevzVictor" target="_blank">
                 <img src={navIcon2} />
               </a>
-              <a href="">
+              <a href="https://twitter.com/Vict0r_dev" target="_blank">
                 <img src={navIcon3} />
               </a>
             </div>

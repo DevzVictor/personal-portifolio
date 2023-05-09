@@ -15,22 +15,34 @@
     border: 1px solid rgba(255, 255, 255, 0.5);
     font-size: 20px;
     margin-bottom: 16px;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    width: 50%;
   }
   .banner h1 {
     font-size: 65px;
     font-weight: 700;
     letter-spacing: 0.8px;
     line-height: 1;
+    display: flex;
+    width: 100%;
+  }
+  .banner span {
+    font-size: 65px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    line-height: 1;
     margin-bottom: 20px;
-    display: block;
+    display: flex;
+    width: 100%;
   }
   .banner p {
     color: #B8B8B8;
     font-size: 18px;
     letter-spacing: 0.8px;
     line-height: 1.5em;
-    width: 96%;
+    width: 100%;
+    text-align: justify;
   }
   .banner button {
     color: #fff;
