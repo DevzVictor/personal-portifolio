@@ -2,8 +2,6 @@ import "./Style.css";
 import { Col, Container, Tab, Row, Nav } from "react-bootstrap";
 import { ProjectCard } from "../ProjectCard/ProjectCard";
 import { ProjectMocks } from "./ProjectMocks";
-import "animate.css";
-import TrackVisibility from "react-on-screen";
 
 export const ProjectsSection = () => {
   return (
@@ -11,17 +9,21 @@ export const ProjectsSection = () => {
       <Container>
         <Row>
           <Col size={12}>
-          <TrackVisibility>
-            {({isVisible}) => 
-              <div className={isVisible ? "animate__animated animate__bounce animate__delay-2s" : ""}>
-            <h2>Projetos</h2>
-            <p>
-              Cada projeto foi uma oportunidade para aplicar minhas habilidades e conhecimentos, buscando superar desafios e alcançar resultados excepcionais. Estou ansioso para embarcar em novas aventuras de projetos empolgantes no futuro!
-            </p>
-            </div>}
-            </TrackVisibility>
+            <div>
+              <h2>Projetos</h2>
+              <p>
+                Cada projeto foi uma oportunidade para aplicar minhas
+                habilidades e conhecimentos, buscando superar desafios e
+                alcançar resultados excepcionais. Estou ansioso para embarcar em
+                novas aventuras de projetos empolgantes no futuro!
+              </p>
+            </div>
             <Tab.Container id="projects-tab" defaultActiveKey="first">
-              <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
+              <Nav
+                variant="pills"
+                className="nav-pills mb-5 justify-content-center align-items-center"
+                id="pills-tab"
+              >
                 <Nav.Item>
                   <Nav.Link eventKey="first">Frontend</Nav.Link>
                 </Nav.Item>
@@ -42,6 +44,7 @@ export const ProjectsSection = () => {
                           title={projects.title}
                           description={projects.description}
                           imageUrl={projects.imgUrl}
+                          link={projects.link}
                         />
                       );
                     })}
