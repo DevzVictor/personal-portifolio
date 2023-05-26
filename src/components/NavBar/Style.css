@@ -8,8 +8,27 @@ nav.navbar {
 }
 
 .logo {
-    width: 250px;
+  width: 250px;
 }
+
+@media (max-width: 1201px) {
+  .logo {
+    width: 200px !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .logo {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    display: flex;
+  }
+}
+
 nav.navbar.scrolled {
   padding: 0px 0;
   background-color: #121212;
