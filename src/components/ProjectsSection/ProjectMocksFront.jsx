@@ -17,11 +17,13 @@ export const ProjectMocksFront = [
     title: "MPE Week Ambiente do Seller",
     description: "Participei do desenvolvimento dessa plataforma em uma equipe composta por 3 programadores onde o objetivo era criar um ambiente onde os sellers poderiam cadatrar seus produtos e fazer a gestão da sua loja online",
     imgUrl: mpeWeekSeller,
+    link: "https://www.mpeweekbb.com.br/login"
   },
   {
     title: "MPE Week Marktplace",
     description: "Participei do desenvolvimento desse marketplace em uma equipe composta por 3 programadores onde o objetivo era criar um marketplace onde os usuários poderiam regastar cupons e consumir produtos com desconto localmente",
     imgUrl: mpeWeekMarketPlace,
+    link: "https://www.ofertasmpeweek.bb.com.br/"
   },
   {
     title: "Business Startup",
