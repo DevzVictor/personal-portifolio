@@ -3,6 +3,7 @@ import { Col, Container, Tab, Row, Nav } from "react-bootstrap";
 import { ProjectCard } from "../ProjectCard/ProjectCard";
 import { ProjectMocksFront } from "./ProjectMocksFront";
 import { ProjectMocksBack } from "./ProjectMocksBack";
+import { ProjectMocksPessoais } from "./projectMocksPessoais";
 
 export const ProjectsSection = () => {
   return (
@@ -26,13 +27,13 @@ export const ProjectsSection = () => {
                 id="pills-tab"
               >
                 <Nav.Item>
-                  <Nav.Link eventKey="first">Frontend</Nav.Link>
+                  <Nav.Link eventKey="first">Corporativos</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey="second">Backend</Nav.Link>
+                  <Nav.Link eventKey="second">Freelas</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey="third">Mobile</Nav.Link>
+                  <Nav.Link eventKey="third">Pessoais</Nav.Link>
                 </Nav.Item>
               </Nav>
               <Tab.Content>
@@ -66,7 +67,21 @@ export const ProjectsSection = () => {
                     })}
                   </Row>
                 </Tab.Pane>
-                <Tab.Pane eventKey="third">lorem ipsum</Tab.Pane>
+                <Tab.Pane eventKey="third">
+                <Row>
+                    {ProjectMocksPessoais.map((projects, index) => {
+                      return (
+                        <ProjectCard
+                          key={index}
+                          title={projects.title}
+                          description={projects.description}
+                          imageUrl={projects.imgUrl}
+                          link={projects.link}
+                        />
+                      );
+                    })}
+                  </Row>
+                </Tab.Pane>
               </Tab.Content>
             </Tab.Container>
           </Col>
